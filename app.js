@@ -22,14 +22,18 @@ app.use(express.static("public"));
 
 // mongoose.connect("mongod://localhost:27017/todolistDb",{useNewUrlParser: true});
 
-main().catch((err) => console.log(err));
+// main().catch((err) => console.log(err));
 
 async function main() {
+  // mongoose.connect("mongod://localhost:27017/todolistDb", {
+  //   useNewUrlParser: true,
+  // });
   await mongoose.connect(
-    "mongodb+srv://arjuncvinod:Arjuncvinod%40123@arjun.advry0c.mongodb.net/todoListDB?retryWrites=true&w=majority",
+    "mongodb+srv://arjuncvinod:gdozFKJP7i12I87s@cluster0.yjxy0xp.mongodb.net/todoListDB",
     { useNewUrlParser: true }
   );
-  }
+}
+main()
 const itemSchema = new mongoose.Schema({
   name: String,
 });
