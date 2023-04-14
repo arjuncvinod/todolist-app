@@ -26,7 +26,7 @@ main().catch((err) => console.log(err));
 
 async function main() {
   await mongoose.connect(
-    "mongodb+srv://arjuncvinod:arjun123@arjun.advry0c.mongodb.net/todoListDB",
+    "mongodb+srv://arjuncvinod:Arjuncvinod@123@arjun.advry0c.mongodb.net/todoListDB",
     { useNewUrlParser: true }
   );
   }
