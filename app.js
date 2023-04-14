@@ -26,7 +26,7 @@ main().catch((err) => console.log(err));
 
 async function main() {
   await mongoose.connect(
-    "mongodb+srv://arjuncvinod:Arjuncvinod@123@arjun.advry0c.mongodb.net/todoListDB",
+    "mongodb+srv://arjuncvinod:Arjuncvinod@123@arjun.advry0c.mongodb.net/todoListDB?retryWrites=true&w=majority",
     { useNewUrlParser: true }
   );
   }
